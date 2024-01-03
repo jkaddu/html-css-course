@@ -1,5 +1,12 @@
 * {
   font-family: sans-serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h3 {
+  color: #1098ad;
 }
 h1 {
   font-size: 26px;
@@ -24,9 +31,26 @@ p {
 footer p {
   font-size: 16px;
 }
-l1 {
+li {
   font-size: 20px;
 }
-ul {
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(even) {
+  color: green;
+}
+.relPost {
   list-style: none;
+}
+.main-header {
+  background-color: #f7f7f741;
+}
+aside {
+  background-color: #f7f7f741;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
 }
