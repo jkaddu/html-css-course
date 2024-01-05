@@ -2,6 +2,9 @@
   font-family: sans-serif;
   color: #444;
 }
+body {
+  border-top: 10px solid #1098ad;
+}
 h1,
 h2,
 h3,
@@ -28,17 +31,22 @@ p {
   font-size: 28px;
   line-height: 1.5;
 }
+p a {
+  color: #1098ad;
+}
 footer p {
   font-size: 16px;
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 li:first-child {
   font-weight: bold;
 }
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 li:nth-child(even) {
   color: green;
@@ -48,9 +56,25 @@ li:nth-child(even) {
 }
 .main-header {
   background-color: #f7f7f741;
+  padding: 25px;
 }
 aside {
   background-color: #f7f7f741;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
+  border-top: 10px solid #1098ad;
+  border-bottom: 10px solid #1098ad;
+}
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #777;
+}
+a:hover {
+  color: red;
+  font-weight: bold;
+}
+a:active {
+  background-color: blue;
+  font-style: italic;
 }
