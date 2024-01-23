@@ -40,6 +40,34 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* gap: 30px; */
+      }
+      .el {
+        /* 
+        These are the default values for these attributes(flex-grow, flex-shrink,flex-basis)
+        flex-grow: 0;
+        Makes sure all items fit based on the width given. If items are too big for set width it'll shrink items to fit
+        flex-shrink: 1;
+        Handles width of items
+        flex-basis: auto; */
+
+        /* Flex-basis sets the width of the flex items */
+        /* flex-basis: 170px; */
+        /* If you want to remove the flex-shrink effect set its value to 0 otherwise it shrinks the flex items to fit the parent element */
+        /* flex-shrink: 0; */
+        /* If flex-grow is set to 1 it allows the flex items to use the total space of the parent element */
+        /* flex-grow: 1; */
+        /* The short hand for the above 3 properties is flex. Sets width of flex items, eliminates flex-shrink and allows them to use up the total space of the parent element */
+        flex: 1;
+      }
+      .el--1 {
+        align-self: flex-start;
+      }
+      .el--5 {
+        order: -1;
       }
     </style>
   </head>
