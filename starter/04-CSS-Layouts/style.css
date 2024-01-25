@@ -337,23 +337,45 @@ footer {
   font-weight: normal;
   font-style: italic;
 }
-.row {
+/* Flexbox layout */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
   margin-bottom: 60px;
-}
+} */
+/*
 article {
   /* DEFAULT Values
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
   */
-  /* flex: 0 0 825px; */
-  /* Setting flex to 1 allows flexbox to format the element properly with the remaing space */
-  flex: 1;
+/* flex: 0 0 825px; */
+/* Setting flex to 1 allows flexbox to format the element properly with the remaing space  */
+/* flex: 1;
   margin-bottom: 0;
-}
+} */
+/*
 aside {
   flex: 0 0 300px;
+}*/
+
+/* CSS Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main-header {
+  grid-column: 1/-1;
+  margin-bottom: 0;
+}
+article {
+  margin-bottom: 0;
+}
+footer {
+  grid-column: 1/-1;
 }
