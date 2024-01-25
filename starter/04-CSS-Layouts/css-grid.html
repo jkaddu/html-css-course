@@ -53,6 +53,8 @@
         /* gap: 30px; */
         column-gap: 30px;
         row-gap: 60px;
+        /* Reomve later to see work */
+        display: none;
       }
       .el--8 {
         /* Properties that are used on grid items to place them in a specific section of the grid */
@@ -64,18 +66,39 @@
         grid-column: 1;
         grid-row: 2;
       }
+      .el--3 {
+        /* grid-column: 1/4; */
+        /* grid-column: 1 / span 4; */
+        grid-column: 1/-1;
+        grid-row: 3;
+      }
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside container: assigning empty space */
+        align-content: center;
+        justify-content: center;
+
+        /* Aligning items within cells */
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--3 {
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
